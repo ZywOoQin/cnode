@@ -1,10 +1,14 @@
 <template>
   <div class="header">
-    <a href="/">
-      <img src="../assets/cnodejs_light.svg" alt="">
-    </a>
+    <router-link :to="{name:'root'}">
+      <a href="javascript:;"><img src="../assets/cnodejs_light.svg" alt=""></a>
+    </router-link>
     <ul>
-      <li><a href="/">首页</a></li>
+      <li>
+        <router-link :to="{name:'root'}">
+          <a href="javascript:;">首页</a>
+        </router-link>
+      </li>
       <li><a href="javascript:;">新手入门</a></li>
       <li><a href="javascript:;">API</a></li>
       <li><a href="javascript:;">关于</a></li>

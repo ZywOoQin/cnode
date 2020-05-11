@@ -6,7 +6,9 @@
     <div id="content" v-else>
       <div class="panel">
         <div class="topic-header">
-          <a class="homepage" href="/">主页</a>
+          <router-link :to="{name:'root'}">
+            <a class="homepage" href="javascript:;">主页</a>
+          </router-link>
           <span class="divider">/</span>
         </div>
         <div class="inner">
